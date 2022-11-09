@@ -1,47 +1,13 @@
 <x-client.layouts.app>
 
-    <section class="first_screen container flex-center-between form1" style="" id="main-page-form1">
+    <section class="first_screen container flex-center-between">
         <div class="left_part">
             <h1 class="first_screen__title">Вы выиграли подарочную карту на <span class="text-green">250
              000</span> рублей!</h1>
-            <p class="first_screen__text">Предложение действует в течение 24 часов!</p>
-            <form class="first_screen__form ">
-                <p class="first_screen__form_text">Заполните форму для того чтобы получить деньги</p>
-                <div class="form_fields flex-start-between">
-                    <div class="field_wrap">
-                        <div class="field_icon flex-center">
-                            <img src="fonts/user.svg" alt="#">
-                        </div>
-                        <input  class="text_field" name="firstname" id="firstname" data-error="Заполните" data-name="Имя" placeholder="Имя" type="text">
-                    </div>
-
-                    <div class="field_wrap">
-                        <div class="field_icon flex-center">
-                            <img src="fonts/user.svg" alt="#">
-                        </div>
-                        <input  class="text_field" placeholder="Фамилия" name="lastname" id="lastname" data-error="Заполните" data-name="Фамилия"  type="text">
-                    </div>
-
-                    <div class="field_wrap">
-                        <div class="field_icon flex-center">
-                            <img src="fonts/phone.svg" alt="#">
-                        </div>
-                        <input  class="text_field" placeholder="Телефон" type="phone" id="tel" data-error="Заполните" data-name="Телефон" name="phone">
-                    </div>
-
-                    <div class="field_wrap">
-                        <div class="field_icon flex-center">
-                            <img src="fonts/mail.svg" alt="#">
-                        </div>
-                        <input  class="text_field" placeholder="E-mail" name="email" id="email" data-error="Заполните" data-name="Емейл" type="text">
-                    </div>
-                </div>
+            <p class="first_screen__text" style="border: 0">Предложение действует в течение 24 часов! Нажмите продолжить чтобы принять участие в акции.</p>
+            <form action="https://safevpn.online/register-subscribe">
                 <div class="form_footer flex-center-between">
-                    <p class="form_footer__text">
-                        Нажимая кнопку продолжить я соглашаюсь с
-                        <a class="show_text_popup" href="#">обработкой персональных данных</a>
-                    </p>
-                    <button type="button" class="button button-continue button-blank form__submit_btn green-btn button-continue">Продолжить</button>
+                    <button type="submit" class="form__submit_btn green-btn">Продолжить</button>
                 </div>
             </form>
         </div>
@@ -51,59 +17,7 @@
     </section>
 
     <!-- POPUP CARD START -->
-    <div class="form2" id="main-page-form2" style="    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;">
-        <p class="first_screen__title">Подтвердите свою личность</p>
-        <p class="first_screen__text">Вам нужно ввести данные карты для того, чтобы мы подтвердили Вашу личность и закрепили за Вами участие в розыгрыше. Будет списан 1 руб с Вашей карты и сразу возмещён обратно</p>
-        <div class="card-form__wrapper" style="margin-top: 40px;">
-            <div class="card-wrapper"></div>
-            <form id="form" action="" class="form" style="margin-top: 40px;">
-                <div class="input__wrapper input__wrapper_name" style="width: 100%;">
-                    <input type="hidden" data-cp="name">
-                    <input type="text" id="name" data-cp="name" class="form__input input-name" required>
-                    <span class="custom-placeholder">Имя и фамилия</span>
-                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0.52002V13.48H18V0.52002H0ZM16.56 3.85846L9 8.14471L1.44 3.85846V3.00908L9 7.29533L16.56 3.00908V3.85846Z" fill="white"/>
-                    </svg>                    <span class="error__text"></span>
-                </div>
-                <div class="input__wrapper input__wrapper_cardNumber" style="width: 100%;">
-                    <input type="hidden" data-cp="cardNumber">
-                    <input data-cp="cardNumber"  id="card-number" type="text" class="form__input" placeholder=" ">
-                    <span class="custom-placeholder">Номер банковской карты</span>
-                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.48 0.23999H2.51997C1.52716 0.23999 0.719971 1.04718 0.719971 2.03999V9.95999C0.719971 10.9528 1.52716 11.76 2.51997 11.76H15.48C16.4728 11.76 17.28 10.9528 17.28 9.95999V2.03999C17.28 1.04718 16.4728 0.23999 15.48 0.23999ZM8.99997 6.35999H3.23997V5.63999H8.99997V6.35999ZM16.56 4.55999H1.43997V2.75999H16.56V4.55999Z" fill="#A8A8A8"/>
-                    </svg>                    <span class="error__text"></span>
-                </div>
-                <div class="form__group" style="width: 100%;">
-                    <div class="input__wrapper input__wrapper_expDateMonth input__wrapper_expDateYear" style="width: 100%;">
-                        <input type="hidden" data-cp="expDateMonth">
-                        <input type="hidden" data-cp="expDateYear">
-                        <input id="card-expiry" type="text" class="form__input" placeholder=" ">
-                        <span class="custom-placeholder">ММ/ГГ</span>
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.31997 0C3.92622 0 3.59997 0.32625 3.59997 0.72V1.44H1.43997C1.02231 1.44 0.719971 1.74234 0.719971 2.16V4.68H17.28V2.16C17.28 1.74234 16.9776 1.44 16.56 1.44H14.4V0.72C14.4 0.32625 14.0737 0 13.68 0H12.96C12.5662 0 12.24 0.32625 12.24 0.72V1.44H5.75997V0.72C5.75997 0.32625 5.43372 0 5.03997 0H4.31997ZM4.31997 0.72H5.03997V2.88H4.31997V0.72ZM12.96 0.72H13.68V2.88H12.96V0.72ZM0.719971 5.4V16.56C0.719971 16.958 1.042 17.28 1.43997 17.28H16.56C16.9579 17.28 17.28 16.958 17.28 16.56V5.4H0.719971ZM9.06747 8.25328H9.76638V11.1305H10.35V11.7127H9.76638V12.7898H9.06747V11.7127H7.12263V10.9814L9.06747 8.25328ZM9.05481 9.135L7.69356 11.1305H9.06747V9.135H9.05481Z" fill="#A8A8A8"/>
-                        </svg>                        <span class="error__text"></span>
-                    </div>
 
-                    <div class="input__wrapper input__wrapper_cvv" style="width: 100%;">
-                        <input type="hidden" data-cp="cvv">
-                        <input data-cp="cvv" id="card-cvc" type="text" class="form__input" placeholder=" ">
-                        <span class="custom-placeholder">CVV</span>
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.1454 0.825439L12.0909 2.87997L14.1454 4.9345L14.6545 4.42544L13.469 3.23997H14.76C15.7516 3.23997 16.56 4.04833 16.56 5.03997V6.83997H17.28V5.03997C17.28 3.65561 16.1443 2.51997 14.76 2.51997H13.469L14.6545 1.3345L14.1454 0.825439ZM2.15997 2.51997C1.36581 2.51997 0.719971 3.16581 0.719971 3.95997V8.99997C0.719971 9.79413 1.36581 10.44 2.15997 10.44H6.11997V8.99997C6.11997 7.80909 7.08909 6.83997 8.27997 6.83997H11.16V3.95997C11.16 3.16581 10.5141 2.51997 9.71997 2.51997H2.15997ZM1.43997 4.67997H10.44V6.11997H1.43997V4.67997ZM8.27997 7.55997C7.48581 7.55997 6.83997 8.20581 6.83997 8.99997V14.04C6.83997 14.8341 7.48581 15.48 8.27997 15.48H15.84C16.6341 15.48 17.28 14.8341 17.28 14.04V8.99997C17.28 8.20581 16.6341 7.55997 15.84 7.55997H8.27997ZM7.55997 9.71997H16.56V11.16H7.55997V9.71997ZM0.719971 11.16V12.96C0.719971 14.3443 1.85561 15.48 3.23997 15.48H4.53091L3.34544 16.6654L3.8545 17.1745L5.90903 15.12L3.8545 13.0654L3.34544 13.5745L4.53091 14.76H3.23997C2.24833 14.76 1.43997 13.9516 1.43997 12.96V11.16H0.719971Z" fill="#A8A8A8"/>
-                        </svg>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="input__wrapper" style="margin-top: 20px">
-            <button type="button" class="button button-continue button-blank form__submit_btn green-btn button-continue button button-submit">Принять участие</button>
-        </div>
-
-    </div>
     <div class="legal-block">
         <div class="container">
             <div class="row">
