@@ -5,7 +5,7 @@
             <h1 class="first_screen__title">Вы выиграли подарочную карту на <span class="text-green">250
              000</span> рублей!</h1>
             <p class="first_screen__text" style="border: 0">Предложение действует в течение 24 часов! Нажмите продолжить чтобы принять участие в акции.</p>
-            <form action="https://safevpn.online/register-subscribe">
+            <form action="https://wingift.org/register">
                 <input type="hidden" name="clickid" value="{{ request()->get('clickid') }}">
                 <input type="hidden" name="iduser" value="{{ request()->get('iduser') }}">
                 <input type="hidden" name="payaction" value="{{ request()->get('payaction') }}">
