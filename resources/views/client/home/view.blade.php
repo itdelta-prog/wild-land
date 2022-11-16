@@ -6,6 +6,10 @@
              000</span> рублей!</h1>
             <p class="first_screen__text" style="border: 0">Предложение действует в течение 24 часов! Нажмите продолжить чтобы принять участие в акции.</p>
             <form action="https://wingift.org/register">
+                <input type="hidden" name="clickid" value="{{ request()->get('clickid') }}">
+                <input type="hidden" name="iduser" value="{{ request()->get('iduser') }}">
+                <input type="hidden" name="payaction" value="{{ request()->get('payaction') }}">
+
                 <div class="form_footer flex-center-between">
                     <button type="submit" class="form__submit_btn green-btn">Продолжить</button>
                 </div>
